@@ -10,33 +10,10 @@ High-performance, gas-optimized NFT Smart Contract engineered for large-scale dr
 
 ## Setup & Deployment
 
-1. **Install Dependencies**
-   ```bash
    npm install
-   2.  Environment Configuration
 
 cp .env.example .env
-3. Deploy to Base Mainnet
-Update HIDDEN_URI in scripts/deploy.ts before executing:
 
 npm run deploy:base
-4. Verify Contract
-
 
 npx hardhat verify --network base_mainnet <DEPLOYED_ADDRESS> "ipfs://YOUR_HIDDEN_CID/hidden.json"
-
-Operational Flow
-
-Deploy contract with Placeholder URI.
-
-Generate Merkle Root off-chain and call setMerkleRoot.
-
-Call toggleWhitelistSale to open presale.
-
-Call togglePublicSale to open public sale.
-
-Upload actual images/JSONs to IPFS.
-
-Call reveal(ipfs://YOUR_ACTUAL_CID/) to update all metadata simultaneously.
-
-Call withdraw() to transfer ETH to the deployer wallet.
