@@ -13,20 +13,20 @@ High-performance, gas-optimized NFT Smart Contract engineered for large-scale dr
 1. **Install Dependencies**
    ```bash
    npm install
-   Environment Configuration
+   2.  Environment Configuration
 
-Bash
 cp .env.example .env
-Deploy to Base Mainnet
+3. Deploy to Base Mainnet
 Update HIDDEN_URI in scripts/deploy.ts before executing:
 
-Bash
 npm run deploy:base
-Verify Contract
+4. Verify Contract
 
-Bash
+
 npx hardhat verify --network base_mainnet <DEPLOYED_ADDRESS> "ipfs://YOUR_HIDDEN_CID/hidden.json"
+
 Operational Flow
+
 Deploy contract with Placeholder URI.
 
 Generate Merkle Root off-chain and call setMerkleRoot.
