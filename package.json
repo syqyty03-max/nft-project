@@ -1,0 +1,20 @@
+{
+  "name": "base-omnidrop-nft",
+  "version": "1.0.0",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:base": "hardhat run scripts/deploy.ts --network base_mainnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.0",
+    "erc721a": "^4.3.0",
+    "dotenv": "^16.4.5",
+    "merkletreejs": "^0.3.11",
+    "keccak256": "^1.0.6"
+  }
+}
